@@ -1,0 +1,28 @@
+{
+  "name": "postwoman",
+  "description": "Requires a new module object.",
+  "keywords": [
+    "extract",
+    "validate",
+    "normalise",
+    "postcode"
+  ],
+  "version": "1.0.0",
+  "main": "src/postwoman.js",
+  "author": "Gajus Kuizinas <gk@anuary.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gajus/postwoman"
+  },
+  "license": "BSD-3-Clause",
+  "scrips": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "gitdown": "^1.1.0",
+    "gulp": "^3.8.9",
+    "gulp-jshint": "^1.8.6",
+    "gulp-mocha": "^1.1.1"
+  }
+}
