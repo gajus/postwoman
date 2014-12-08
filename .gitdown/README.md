@@ -16,7 +16,7 @@ Postwoman.extract('I have been to PE12 9PP. Then I went to LE4 4DR.'); // ['PE12
 
 Postcodes can be extracted from a text string, e.g.
 
-> 'I have been to PE12 9PP. Then I went to LE4 4DR.'
+> I have been to PE12 9PP. Then I went to LE4 4DR.
 
 Postcode matching algorithm is case sensitive, e.g. `Le4 4DR` will not be matched as a valid postcode. If input might have postcodes that have inconsistent use of lowercase/uppercase characters, cast the string to lowercase.
 
