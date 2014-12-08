@@ -14,6 +14,30 @@ Postwoman.normalise('pe129pp'); // PE12 9PP
 Postwoman.extract('I have been to PE12 9PP. Then I went to LE4 4DR.'); // ['PE12 9PP', 'LE4 4DR']
 ```
 
+<h2 id="postwoman-extracting-postcodes">Extracting Postcodes</h2>
+
+<h3 id="postwoman-extracting-postcodes-extracting-from-a-text-string">Extracting From a Text String</h3>
+
+Postcodes can be extracted from a text string, e.g.
+
+> 'I have been to PE12 9PP. Then I went to LE4 4DR.'
+
+Postcode matching algorithm is case sensitive, e.g. `Le4 4DR` will not be matched as a valid postcode. If input might have postcodes that have inconsistent use of lowercase/uppercase characters, cast the string to lowercase.
+
+<h3 id="postwoman-extracting-postcodes-extracting-from-dom">Extracting From DOM</h3>
+
+Postcodes can be extracted from DOM, e.g.
+
+```html
+<address>
+    Vue West End (Leicester Square)<br>3 Cranbourn Street<br>Leicester Square<br>London<br>WC2H 7AL
+</address>
+```
+
+```js
+Postwoman.extract(document.querySelector('address'));
+```
+
 <h2 id="postwoman-download">Download</h2>
 
 Download using NPM:
