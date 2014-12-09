@@ -23,8 +23,12 @@ RE.matchPostcodeUpperCase = new RegExp('(' + RE.outwardCode + ') ?(' + RE.inward
 RE.matchPostcodeLowerCase = new RegExp('(' + RE.outwardCode.toLowerCase() + ') ?(' + RE.inwardCode.toLowerCase() + ')', 'g');
 
 /**
+ * Postcode matching is using postcode validation rules to match postcodes in a string.
+ * 
+ * Returned postcodes are normalised and unique.
+ * 
  * @param {String} input
- * @return {Array} Normalised, unique postcodes.
+ * @return {Array}
  */
 Postwoman.match = function (input) {
     var postcodes = [],
