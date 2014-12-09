@@ -37,8 +37,22 @@ Returned postcodes are normalised and unique.
 
 ## Download
 
+Download using Bower:
+
+```sh
+bower install postwoman
+```
+
 Download using NPM:
 
 ```sh
 npm install postwoman
+```
+
+### Browser Bundle
+
+When using the `./dist/` version, Postwoman resides under gajus namespace:
+
+```js
+var Postwoman = gajus.Postwoman();
 ```

@@ -1741,6 +1741,7 @@ function property(key) {
 module.exports = property;
 
 },{}],56:[function(require,module,exports){
+(function (global){
 var RE = {},
     Postwoman = {},
     _ = {};
@@ -1833,5 +1834,10 @@ Postwoman.normalise = function (input) {
     return postcode[1].toUpperCase() + ' ' + postcode[2].toUpperCase();
 };
 
+global.gajus = global.gajus || {};
+
+global.gajus.Postwoman = Postwoman;
+
 module.exports = Postwoman;
+}).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"lodash.uniq":1}]},{},[56])

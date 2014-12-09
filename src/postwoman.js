@@ -90,4 +90,8 @@ Postwoman.normalise = function (input) {
     return postcode[1].toUpperCase() + ' ' + postcode[2].toUpperCase();
 };
 
+global.gajus = global.gajus || {};
+
+global.gajus.Postwoman = Postwoman;
+
 module.exports = Postwoman;
