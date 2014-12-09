@@ -22,6 +22,10 @@ RE.postcodeLowerCase = new RegExp('^(' + RE.outwardCode.toLowerCase() + ') ?(' +
 RE.matchPostcodeUpperCase = new RegExp('(' + RE.outwardCode + ') ?(' + RE.inwardCode + ')', 'g');
 RE.matchPostcodeLowerCase = new RegExp('(' + RE.outwardCode.toLowerCase() + ') ?(' + RE.inwardCode.toLowerCase() + ')', 'g');
 
+/**
+ * @param {String} input
+ * @return {Array} Normalised, unique postcodes.
+ */
 Postwoman.match = function (input) {
     var postcodes = [],
         matches;
@@ -44,10 +48,18 @@ Postwoman.match = function (input) {
     return postcodes;
 };
 
+/**
+ * @param {String} input
+ * @return {Boolean}
+ */
 Postwoman.validate = function (input) {
     return RE.postcodeUpperCase.test(input) || RE.postcodeLowerCase.test(input);
-}
+};
 
+/**
+ * @param {String} input
+ * @return {String} Upper case, space separated postcode.
+ */
 Postwoman.normalise = function (input) {
     var postcode,
         outwardCode,
