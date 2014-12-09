@@ -1,5 +1,5 @@
 /**
- * @version 1.1.0
+ * @version 1.1.1
  * @link https://github.com/gajus/postwoman for the canonical source repository
  * @license https://github.com/gajus/postwoman/blob/master/LICENSE BSD 3-Clause
  */

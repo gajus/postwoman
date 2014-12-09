@@ -1,7 +1,7 @@
 {
   "name": "postwoman",
   "description": "Requires a new module object.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "extract",
     "validate",
