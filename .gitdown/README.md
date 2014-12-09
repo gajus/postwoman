@@ -18,7 +18,19 @@ If you have found a postcode that erroneously does not pass validation, please v
 
 ### Case Sensitivity
 
-Postcode validation regex is case sensitive. It will match postcode that contains either all upper case or lower case letters, e.g. "ee12 9PP" will not match, "PE12 9PP" will match, "pe12 9pp" will match.
+Postcode validation regex is case sensitive. It will match postcode that contains either all upper case or all lower case letters, e.g. "ee12 9PP" will not match, "PE12 9PP" will match, "pe12 9pp" will match.
+
+## Normalisation
+
+Postcode normalisation makes postcode uppercase and space-separates outward and inward codes.
+
+If input is an invalid postcode, an error will be thrown.
+
+## Matching
+
+Postcode matching is using postcode validation rules to match postcodes in a string.
+
+Returned postcodes are normalised and unique.
 
 ## Download
 

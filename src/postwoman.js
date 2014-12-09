@@ -57,8 +57,13 @@ Postwoman.validate = function (input) {
 };
 
 /**
+ * Postcode normalisation makes postcode uppercase and
+ * space-separates outward and inward codes.
+ *
+ * If input is an invalid postcode, an error will be thrown.
+ * 
  * @param {String} input
- * @return {String} Upper case, space separated postcode.
+ * @return {String}
  */
 Postwoman.normalise = function (input) {
     var postcode,
