@@ -6,6 +6,7 @@ Direct edits to this will be be overwritten. Look for GitDown markup file under 
 
 [![Travis build status](http://img.shields.io/travis/gajus/postwoman/master.svg?style=flat)](https://travis-ci.org/gajus/postwoman)
 [![NPM version](http://img.shields.io/npm/v/postwoman.svg?style=flat)](https://www.npmjs.org/package/postwoman)
+[![Bower version](http://img.shields.io/bower/v/postwoman.svg?style=flat)](http://bower.io/search/?q=postwoman)
 
 ```js
 Postwoman.validate('foo'); // false
