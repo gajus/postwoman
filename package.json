@@ -26,6 +26,6 @@
     "gulp-mocha": "^1.1.1"
   },
   "dependencies": {
-    "postcode": "^0.2.1"
+    "lodash.uniq": "^2.4.1"
   }
 }
